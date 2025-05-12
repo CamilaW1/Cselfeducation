@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C Programming Course</title>
+  <style>
+    /* Reset and base styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; display: flex; height: 100vh; }
+
+    /* Sidebar navigation */
+    nav.sidebar {
+      width: 240px;
+      background-color: #f8f9fa;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    nav.sidebar .logo {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    nav.sidebar ul {
+      list-style: none;
+      flex-grow: 1;
+    }
+    nav.sidebar ul li {
+      margin-bottom: 1rem;
+    }
+    nav.sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    nav.sidebar ul li a:hover {
+      color: #007bff;
+    }
+    nav.sidebar ul li a i {
+      margin-right: 0.5rem;
+    }
+
+    /* Main content and header */
+    .main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #a31f34;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .title { font-size: 1.25rem; }
+    header .profile {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    /* Avatar container for user image */
+    header .profile .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #e0e0e0;
+    }
+    header .profile .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Content area */
+    .content {
+      padding: 2rem;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+    .content h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    .module-list {
+      list-style: none;
+    }
+    .module-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #555;
+    }
+    .module-list li .status {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.75rem;
+      color: #28a745;
+    }
+    .module-list li .status.incomplete {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="logo">C Programming</div>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Lessons</a></li>
+      <li><a href="#"><i class="fab fa-python"></i> Code</a></li>
+      <li><a href="#"><i class="fas fa-comments"></i> Forum</a></li>
+      <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
+  </nav>
+  <div class="main">
+    <header>
+      <div class="title">Course Home</div>
+      <div class="profile">
+        <div>Camila W 🇨🇦</div>
+        <div class="avatar">
+          <img src="Cprogramming.png" alt="Profile">
+        </div> 
+      </div>
+    </header>
+    <div class="content">
+      <h2>Welcome to C Programming</h2>
+      <ul class="module-list">
+        <li><span class="status">✔️</span> Introduction</li>
+        <li><span class="status">✔️</span> Setup & Tools</li>
+        <li><span class="status">✔️</span> Hello World</li>
+        <li><span class="status incomplete">⚪</span> Variables & Types</li>
+        <li><span class="status incomplete">⚪</span> Control Flow</li>
+        <li><span class="status incomplete">⚪</span> Functions</li>
+        <!-- add more modules as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
